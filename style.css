@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+body, html {
+  overflow-x: hidden;
+  color: white;
+  background-color: black;
+}
+
+canvas {
+  position: relative;
+  opacity: 0;
+  transform: scale(0);
+  animation: canvas 1s ease-in forwards;
+}
+
+@keyframes canvas {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.container > * {
+  pointer-events: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 4rem;
+  padding-inline: 6rem;
+  height: fit-content;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 4rem;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: 400;
+}
+
+.title {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+  } 
+  
+  nav ul {
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.flex-box {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.filler {
+  height: 100vh;
+}
