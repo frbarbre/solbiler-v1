@@ -11,7 +11,6 @@ import javascriptLogo from './javascript.svg'
 
 import sunTexture from '/img/sun.jpg';
 
-
 // Scene
 const scene = new THREE.Scene();
 
@@ -237,5 +236,4 @@ let biler = [
   const LEJEUDGIFT = (GRUNDBELOEB + (antaldage * PRISPRDAG) + (antaldage * biltillaeg)) * (1 + MOMS);
   return LEJEUDGIFT.toFixed(2);
   }
-  
   
