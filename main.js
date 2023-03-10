@@ -74,7 +74,7 @@ light.position.set(0, 0, 0);
 light.intensity = 10
 scene.add(light);
 
-const ambientLight = new THREE.PointLight(0x404040);
+const ambientLight = new THREE.PointLight(0xFFFFFF);
 ambientLight.position.set(100, 100, 100)
 ambientLight.intensity = 5
 scene.add(ambientLight);
